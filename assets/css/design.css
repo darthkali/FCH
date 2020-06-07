@@ -1,0 +1,723 @@
+body {
+    font-family: TransitWeb, sans-serif;
+}
+
+/* backgroundcolor from the Main Page */
+html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow: hidden;   /* hide the scrollbar, if content grows over the page size */
+    font-size: 17px;
+}
+
+nav, section, footer {display: block;}
+
+input, textarea, select{
+    font-size: 17px;
+}
+
+/* adjustments for all Elements - set the default parameters for all browsers to Null*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: TransitWeb, Arial, sans-serif;
+    box-sizing: border-box;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    line-height: 1.45em;
+}
+
+h1{
+    line-height: 100%;
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6{
+    line-height: 100%;
+    text-align: left;
+}
+
+/* ----------------------------------   Image   ---------------------------------- */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* ----------------------------------   Footer   ---------------------------------- */
+footer {
+    clear: both;
+    padding: 10px;
+    position:absolute;         /*fixed the Footerbar on the Bottom*/
+    bottom: 0;
+    height:40px;
+    width: 100%;
+    background: var(--secondary-bg-color);
+    z-index: 1;             /* Layer Position in Z-Direction - 1 = second Layer*/
+    vertical-align: middle;
+}
+
+div#FooterLeft {
+    float: left;
+    width: 33%
+}
+
+div#FooterLeft a{
+    color: var(--secondary-text-color);
+}
+
+div#FooterLeft a:hover{
+    color: var(--hover-color);
+}
+
+div#FooterMiddle{
+    float: left;
+    width: 34%;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+div#FooterRight{
+    float: right;
+    width: 33%;
+}
+
+div#FooterRight a img {
+    float: right;
+    height: 16px;
+    margin-left: 10px;
+}
+
+
+/* ----------------------------------   Content   ---------------------------------- */
+.Content {
+    background-color: var(--primary-bg-color);
+    height: calc(100% - 100px); /* calculate the Height from the Contentfield - Size from the Window - (height Nav-Bar + height Footer) */
+    position: relative;
+    overflow: auto;
+    padding: 20px;
+}
+
+.Content select{
+    text-align: center;
+    text-align-last: left;
+}
+
+.Content img{
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+/* ----------------------------------   Button   ---------------------------------- */
+.Content button{
+    text-align: center;
+    background-color: var(--secondary-bg-color);
+    padding: 10px;
+    color: var(--secondary-text-color);
+    border-radius:2px;
+    font-size: 17px;
+}
+
+.Content button:hover{
+    color: var(--hover-color);
+}
+
+.Content table{
+    margin-top: 10px;
+}
+
+.Content button i{
+    margin: 0 5px 0 5px;
+    color:var(--secondary-text-color);
+}
+
+.Content label{
+    width: 100%;
+}
+
+/* ----------------------------------   Content Events   ---------------------------------- */
+.ContentEvents {
+    width: 100%;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: var(--border-color);
+    overflow: hidden;
+}
+
+.RegistrationButton{
+    background-color: #bb6600!important;
+}
+
+.RegistrationButton:hover{
+    color: #df8500 !important;
+}
+
+div#ContentEventsInPast{
+    opacity: 0.5;
+}
+
+.ContentEvents img{
+    margin-left: 1%;
+    margin-bottom: 10px!important;
+    width: 30%;
+    float: right;
+}
+
+.ContentEvents div p{
+    margin: 1% 0 2% 0;
+}
+
+.ContentEvents div button{
+    margin: 0;
+}
+
+hr#ContentEventsLine{
+    width: 100%;
+    height: 1%;
+    background-color: dimgrey;
+}
+
+div#eventBox{
+    padding: 0;
+    margin-bottom: 0;
+    border-style: none;
+}
+
+button#showMoreButton{
+    display: none;
+}
+
+/* ----------------------------------   Error - Page   ---------------------------------- */
+.ErrorPage{
+    text-align: center;
+    height: 80%;
+}
+
+.ErrorPage h1{
+    margin-top: 5% !important;
+}
+
+.ErrorImg{
+    height: 70%;
+}
+
+/* ----------------------------------   Site - Picture   ---------------------------------- */
+.SitePicture {
+    height: calc(100% - 100px); /* calculate the Height from the Picture - Size from the Window - (height Nav-Bar + height Footer) */
+    position: relative;
+    overflow:hidden;
+    width:30%;
+    float: left;
+}
+
+.SitePicture img {
+    height: 100%;
+    width: 100%;
+}
+
+/* ----------------------------------   Animation  ---------------------------------- */
+div#fadeInIndexPage {
+    animation: animationFadeIn ease 2s;
+}
+
+div#fadeIn {
+    animation: animationFadeIn ease 2s;
+}
+
+div#fadeInImg {
+    animation: animationFadeIn ease 1s;
+}
+
+@keyframes animationFadeIn{
+    0% {
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+/* ----------------------------------   Form Fields  ---------------------------------- */
+form {
+    width: 80%;
+    max-width: 40em;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    color: var(--secondary-text-color);
+    pointer-events: all;
+}
+
+form h1{
+    text-align: center;
+}
+
+form h5{
+    text-align: center;
+}
+
+form img{
+    float: right;
+    margin-top: 20px;
+}
+
+form a:hover  {
+     color: var(--hover-color);
+}
+
+form input, form textarea, form select {
+    display: block;
+    background-color: var(--primary-bg-color);
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 5px 0 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--border-color);
+    border-radius: 3px;
+}
+
+form input:hover{
+    box-shadow: var(--shadow);
+}
+
+form input:focus, form select:focus{
+    border-left: solid;
+    border-left-width: 4px;
+    border-left-color: var(--hover-color);
+    box-shadow: var(--shadow);
+}
+
+form textarea {
+    height: 300px;
+    resize: vertical;
+}
+
+form i{
+    color: var(--secondary-text-color);
+    margin-left: 10px;
+}
+
+form [type="file"] {
+    padding: 0;
+    border-style: none;
+     color: var(--primary-text-color);
+ }
+
+form [type="file"]:hover {
+    box-shadow: none;
+}
+
+.checkBox {
+    float: left;
+    width:auto;
+    height: auto;
+}
+
+.checkBox  label{
+    width: auto;
+    vertical-align: center;
+    margin: 4px auto auto auto;
+}
+
+.checkBox input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.checkBox input[type="checkbox"]:hover, .checkBox input[type="checkbox"]:focus {
+    box-shadow: none;
+}
+
+/* redesign the Date-Type for Input-Fields */
+form [type="date"] {
+    background:var(--primary-bg-color) url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+
+form [type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+form [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+form label {
+    float: left;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+form button{
+     float: right;
+     margin: 5px 0 5px 10px;
+}
+/* ----------------------------------   Tabelle   ---------------------------------- */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    border-style: groove;
+    border-width: 1px;
+}
+
+th a, i{
+    color:var(--secondary-text-color);
+}
+
+th a:hover{
+    color:var(--hover-color);
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr{
+    height: 50px;
+}
+
+tr:hover, tr:nth-child(even):hover{
+    background-color: var(--hover-color);
+    color: var(--secondary-text-color);
+}
+
+tr:nth-child(even){
+    background-color: var(--tertiary-bg-color);
+}
+
+th {
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+}
+
+table input{
+    display: inline;
+    padding: 5px;
+}
+
+table input:hover{
+    box-shadow: var(--shadow);
+}
+
+/* ----------------------------------   pictureRaster   ---------------------------------- */
+.pictureRaster{
+    margin: 30px auto 0 auto;
+    width:80%;
+}
+
+.pictureRaster ul {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, calc(100%/6));
+    grid-auto-rows: 200px;
+    list-style: none;
+}
+
+.pictureRaster ul img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    padding: 3px;
+}
+
+.pictureRaster h1{
+    text-align: left;
+}
+
+.startContent{
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 60%;
+}
+
+.startContent p{
+    display: inline-block;
+    text-align: justify;
+}
+
+.startContent img{
+    width: 18%;
+    margin-right: 100px;
+    float: right;
+}
+
+/* ----------------------------------   AboutUs Page   ---------------------------------- */
+.aboutUs img{
+    width: 30%;
+    float: right;
+}
+
+.aboutUsImageMap{
+    margin: 0!important;
+    display: block;
+    padding: 0 10px;
+    float: left!important;
+    width:40%!important;
+    height: 400px;
+}
+
+.aboutUs iframe{
+    display: none;
+    padding: 0 10px;
+    float: left;
+    width:40%;
+    height: 400px;
+}
+
+.aboutUs a:hover{
+    color: var(--hover-color);
+}
+
+.aboutUs i{
+    color: var(--primary-text-color);
+}
+
+/* ----------------------------------   UserPage   ---------------------------------- */
+.userPageBox{
+    width: 100%;
+    max-width: 50em;
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+.userPageBox h5{
+    text-align: center;
+}
+
+.userBox{
+    display: block;
+    width: 100%;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: var(--border-color);
+    overflow: hidden;
+}
+
+.userBox:hover{
+    box-shadow: var(--shadow);
+}
+
+.userBox img{
+    width: 20%;
+    float: right;
+    box-shadow: var(--shadow);
+    margin: 5px;
+}
+
+.userBox h1{
+    text-align: left;
+}
+
+/* ----------------------------------   Filter Sortieren   ---------------------------------- */
+.FilterBoxButton{
+    height: 30px;
+    padding:5px!important;
+    margin-left: 0;
+}
+
+#ButtonInCenter{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.filterBox{
+    max-width: 100%!important;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width:100%;
+    padding: 0;
+}
+
+.sortFilterBox > div {
+    background-color: #0000dd !important;
+}
+
+.sortFilterBox{
+    margin: 0 10px 10px 0;
+    padding: 0;
+}
+
+.sortFilterBox [type="date"] {
+    height: 30px;
+    padding: 5px!important;
+}
+
+.filterBox .sortFilterBox select{
+    /*background-color: var(--primary-bg-color);*/
+    height: 30px;
+    margin: 5px 0 5px 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--border-color);
+    border-radius: 3px;
+    padding: 0;
+}
+
+.filterBox form{
+    height: 20px;
+    width:auto;
+    max-width: none;
+    margin-right: 0;
+    position: relative;
+}
+
+.filterBox form button{
+    margin: 0;
+}
+
+.filterBox form a:hover  {
+    color: var(--hover-color);
+}
+
+.filterBox form input, .filterBox form select {
+    display: block;
+    background-color: var(--primary-bg-color);
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 5px 0 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--border-color);
+    border-radius: 3px;
+}
+
+.filterBox form input:hover{
+    box-shadow: var(--shadow);
+}
+
+.filterBox form input:focus, .filterBox form select:focus{
+    border-left: solid;
+    border-left-width: 4px;
+    border-left-color: var(--hover-color);
+    box-shadow: var(--shadow);
+}
+
+.filterBox form i{
+    color: var(--secondary-text-color);
+    margin-left: 10px;
+}
+
+.filterBox .sortFilterBox select:hover{
+    box-shadow: var(--shadow);
+}
+.filterBox .sortFilterBox select:focus{
+    border-left: none;
+    border-left-width:0;
+    box-shadow: var(--shadow);
+}
+
+/* ----------------------------------   CheckBox   ---------------------------------- */
+.checkBox{
+    display: block;
+    padding: 5px;
+}
+
+.checkBox input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+/* ----------------------------------   Error   ---------------------------------- */
+.error {
+    display: block;
+    line-height: 25px;
+    padding:5px;
+    color: var(--secondary-text-color);
+    background: var(--error-color);
+    text-align: center;
+    border-radius: 3px;
+}
+
+.deleteQuestion {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.deleteQuestion button{
+    margin: 5px auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    width:auto;
+    padding: 10px;
+}
+
+.deleteQuestion h3{
+    text-align: center;
+    line-height: 1.45em;
+}
+
+.errorinput{
+    position: relative;
+}
+
+.errorinput input{
+    border: 1px solid #dd0009;!important;
+}
+
+.errorinput::after{
+    content: '!';
+    color: #dd0009;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    bottom: 32px;
+}
+
+.error-message{
+    text-align: right;
+    color: #dd0009;
+    left: 0;
+    padding: 0;
+    font-size: 12px;
+    width: 100%;
+    display: none;
+    z-index: 1;
+}
+
+.errorinput .error-message{
+    display: block;
+}
+
+/* ----------------------------------   Logo StartPage   ---------------------------------- */
+.startLogo{
+    display: block;
+    float: right;
+    text-align: center;
+    margin-top: 0;
+    width: 35%;
+}
+
+.startLogo  img{
+    float: none;
+    display: inline;
+    margin: 0 auto;
+    height: 200px;
+    width: auto;
+    max-width: 100%;
+}
+
+.startLogo {
+    float: right;
+}

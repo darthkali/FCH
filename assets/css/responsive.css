@@ -1,0 +1,101 @@
+@media(max-width: 850px) {
+    /* ----------------------------------   Navigation   ---------------------------------- */
+    nav{
+        padding-right: 0;    /* margin to the right side, to get space for the submenu */
+        overflow: auto;
+    }
+
+    .navfloat{
+        display: none;
+        float: none;
+    }
+
+    label.responsive-nav-label {
+        text-align: right;
+        display: block;
+        padding: 20px;
+        cursor: pointer;
+        color: var(--secondary-text-color);
+    }
+
+    nav a, .dropdown {
+        float: none;
+        display: block;
+        width:100%;
+        text-align: left;
+    }
+
+    .dropdown .dropbtn {
+        width:100%;
+        text-align: left;
+    }
+
+    .dropdown-content {
+        margin-left: auto;
+        width: 100%;
+    }
+
+    input#responsive-nav[type=checkbox]:checked ~ .navfloat{display: block;}
+
+    /* ----------------------------------   Footer  ---------------------------------- */
+    div#FooterLeft {width: 70% !important;}
+    div#FooterMiddle{display: none !important;}
+    div#FooterRight{width: 30% !important;}
+
+
+    /* ----------------------------------   Start  ---------------------------------- */
+    .startContent {width: 100%;}
+
+    .startLogo{
+        float: none;
+        width: 100%;
+    }
+
+    .pictureRaster hr{
+        display: block;
+        width: 100%;
+        border-top: inset;
+        border-width: 1px;
+    }
+
+    /* ----------------------------------   Site - Picture   ---------------------------------- */
+    .SitePicture {display: none ;}
+
+    /* ----------------------------------  NavContent   ---------------------------------- */
+    .NavContent {font-size: 1.8em;}
+
+    /* ----------------------------------  sortFilterBox   ---------------------------------- */
+    .sortFilterBox [type="date"] {
+        height: 30px;
+        width: 250px;
+        padding: 5px!important;
+    }
+
+    .sortFilterBox{width: 250px;}
+}
+
+/* ----------------------------------   pictureRaster   ---------------------------------- */
+@media (max-width: 1200px){.pictureRaster ul{grid-template-columns: repeat(auto-fill, calc(100% / 3));}}    /* 3 Columns */
+@media (max-width: 950px) {.pictureRaster ul{grid-template-columns: repeat(auto-fill, calc(100% / 2));}}    /* 2 Columns */
+@media (max-width: 700px) {
+    .pictureRaster ul{grid-template-columns: repeat(auto-fill, 100%);}
+    .successContact{
+        font-size: 1.3em;
+        width: 120%;
+        left: -10%;
+    }
+
+}
+
+/* ----------------------------------   400px   ---------------------------------- */
+@media (max-width: 400px) {
+    form button{
+        float: right;
+        /*margin: 5px 0 5px auto;*/
+        display: inline-grid;
+    }
+}
+
+@media (max-height: 400px) {
+    .ErrorImg{display: none}
+}
