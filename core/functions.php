@@ -1,7 +1,8 @@
 <?
-const DEBUG = true;
+const DEBUG = false;
 const ERROR = true;
 
+//this is for debugging
 function debug_to_logFile($message, $class = null){
     if (!is_dir(__DIR__.'/../logs')) {
         mkdir (__DIR__.'/../logs', 4777);
@@ -13,6 +14,7 @@ function debug_to_logFile($message, $class = null){
     }
 }
 
+//this is for error
 function error_to_logFile($message, $class = null){
     if(ERROR){
         $class= ($class != null) ? $class:  '';
@@ -21,6 +23,7 @@ function error_to_logFile($message, $class = null){
     }
 }
 
+// the function generate an Array with random files
 function crateDataOfFilesFromDirectory($dir, $numberOfOutputFiles){
     //create a grid with random pictures from a directory on the server
     $allFiles = scandir($dir);
@@ -39,7 +42,7 @@ function crateDataOfFilesFromDirectory($dir, $numberOfOutputFiles){
         $numberOfOutputFiles = count($allFiles);
     }
 
-    // pics 12 random indexes from the Array
+    // pics a number of  random indexes from the Array
     $rand_keys = array_rand($allFiles, $numberOfOutputFiles);
 
     if($numberOfOutputFiles > 1){
