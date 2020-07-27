@@ -59,8 +59,8 @@ use FCH\User;
                     <?php endforeach; ?>
                 </p>
                 <br>
-<!--                <h3 data-descTitle>Beschreibung:</h3>-->
-<!--                <p data-desc>--><?//=$user['DESCRIPTION']?><!--</p>-->
+                <h3 data-descTitle>Beschreibung:</h3>
+                <p data-desc><?=$user['DESCRIPTION']?></p>
                 <button data-showMore class="FilterBoxButton" id="showMoreButton" onclick="showMoreButtonClicked(this);">mehr anzeigen</button>
             </div>
         <?php endforeach; ?>
