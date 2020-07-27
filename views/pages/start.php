@@ -2,12 +2,13 @@
     <div class="pictureRaster">
         <div>
                 <div class="startContent">
-                    <h1>Herzlich Willkommen beim FC Hannover</h1><br>
+                    <h1>Ein Dank an unsere Mitglieder!</h1><br>
+                    <h2>Ohne Mitglieder - kein Verein!</h2><br>
                     <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
-                        sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br>
+                        Liebe Mitglieder, <br><br>
+                        wir möchten uns in dieser schwierigen Zeit bei Euch für Eure Treue und Unterstützung bedanken. <br><br>
+                        Hätte unser Verein keine Mitglieder mehr, da alle aufgrund der Corona-Pandemie austreten würden, gäbe es den FC Hannover nach 15 Jahren nicht mehr. Wir sind auf Eure Solidarität angewiesen. <br>
+                        Nochmals herzlichen Dank dafür!<br>
                     </p>
                 </div>
 

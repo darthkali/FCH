@@ -8,17 +8,13 @@
         <p>
             <h3>Liebe Fans und Interessierte unseres Vereins,</h3>
             <br>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            <br>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-        takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        <br>
-            <br>
+            der FC Hannover ist ein Fußballverein aus Hannover und wurde am 20.07.2005 gegründet.<br><br>
+
+            Seit mehr als 15 Jahren ist unser Verein im Stadtteil Bothfeld verankert und Bestandteil der Traditionen und kulturellen Vielfalt des Stadtteils.<br>
+            Mehr als 100 Mitglieder machen ihn zum bedeutendsten Sportverein in dem Stadtteil.<br>
+            Der Verein wendet sich an alle Menschen, die am Sport und Vereinsleben teilnehmen möchten.<br><br>
+            Auf den folgenden Seiten finden Sie einen Überblick über sämtliche Angebote des Vereins und die verantwortlichen Ansprechpartner.<br>
+         
             Wir wünschen euch viel Spaß beim durchstöbern unsere Seite.
             <br><br>
             <h4>Euer FC Hannover</h4>
